@@ -12,7 +12,10 @@ export default function Header() {
       <header className="cabecalho">
         <section className="cabecalho__conteudo">
           <section className="cabecalho__conteudo-esquerda">
-            <i className="ri-football-fill" />
+            <section className="cabecalho__conteudo__logo">
+              <i className="ri-football-fill" />
+              <h1 className="cabecalho__conteudo__logo__titulo">ScoutFut</h1>
+            </section>
 
             <ul className="cabecalho__conteudo__link">
               <li className="cabecalho__conteudo__link_links">
