@@ -1,11 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Header.css";
 
 export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("isDarkMode") === "true";
+    setIsDarkMode(savedTheme);
+    document.body.classList.toggle("light-mode", !savedTheme);
+  }, []);
+
   const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+    setIsDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      localStorage.setItem("isDarkMode", String(newMode));
+      document.body.classList.toggle("dark-mode", newMode);
+      document.body.classList.toggle("light-mode", !newMode);
+      return newMode;
+    });
   };
   return (
     <>

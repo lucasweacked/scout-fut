@@ -1,6 +1,20 @@
+body {
+    background-color: var(--corPreto);
+    color: var(--corSnow);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: var(--corBranco);
+    color: var(--corPreto);
+}
+
 .cabecalho {
     padding: 1% 10%;
-    background-color: var(--corCinza);
+}
+
+body.light-mode .cabecalho {
+    background-color: var(--corBranco);
 }
 
 .cabecalho__conteudo {
@@ -34,6 +48,10 @@
     color: var(--corBranco);
 }
 
+body.light-mode .cabecalho__conteudo__logo__titulo {
+    color: var(--corPreto);
+}
+
 .cabecalho__conteudo__link {
     display: flex;
     flex-direction: row;
@@ -50,6 +68,10 @@
     color: var(--corBranco);
     font-size: 1.2rem;
     font-family: var(--fontPrincipal);
+}
+
+body.light-mode .cabecalho__conteudo__link_links a {
+    color: var(--corPreto);
 }
 
 .cabecalho__conteudo-direita {
@@ -69,4 +91,9 @@
 .cabecalho__conteudo__botao-theme i {
     font-size: 1.2rem;
     color: var(--corBranco);
+}
+
+body.light-mode .cabecalho__conteudo__botao-theme i,
+body.light-mode .cabecalho__conteudo__botao-config i {
+    color: var(--corPreto);
 }
