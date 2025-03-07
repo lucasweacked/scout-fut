@@ -4,17 +4,8 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-body.light-mode {
-    background-color: var(--corBranco);
-    color: var(--corPreto);
-}
-
 .cabecalho {
     padding: 1% 10%;
-}
-
-body.light-mode .cabecalho {
-    background-color: var(--corBranco);
 }
 
 .cabecalho__conteudo {
@@ -48,10 +39,6 @@ body.light-mode .cabecalho {
     color: var(--corBranco);
 }
 
-body.light-mode .cabecalho__conteudo__logo__titulo {
-    color: var(--corPreto);
-}
-
 .cabecalho__conteudo__link {
     display: flex;
     flex-direction: row;
@@ -68,10 +55,6 @@ body.light-mode .cabecalho__conteudo__logo__titulo {
     color: var(--corBranco);
     font-size: 1.2rem;
     font-family: var(--fontPrincipal);
-}
-
-body.light-mode .cabecalho__conteudo__link_links a {
-    color: var(--corPreto);
 }
 
 .cabecalho__conteudo-direita {
@@ -91,9 +74,4 @@ body.light-mode .cabecalho__conteudo__link_links a {
 .cabecalho__conteudo__botao-theme i {
     font-size: 1.2rem;
     color: var(--corBranco);
-}
-
-body.light-mode .cabecalho__conteudo__botao-theme i,
-body.light-mode .cabecalho__conteudo__botao-config i {
-    color: var(--corPreto);
 }

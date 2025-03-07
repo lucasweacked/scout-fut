@@ -2,14 +2,6 @@
     padding: 2% 20%;
 }
 
-body.light-mode .principal {
-    background-color: var(--corBranco);
-}
-
-body.dark-mode .principal {
-    background-color: var(--corPreto);
-}
-
 .principal__conteudo__titulo {
     color: var(--corBranco);
     font-family: var(--fontPrincipal);
@@ -17,19 +9,11 @@ body.dark-mode .principal {
     text-align: center;
 }
 
-body.light-mode .principal__conteudo__titulo {
-    color: var(--corPreto);
-}
-
 .principal__conteudo__paragrafo {
     color: var(--corBranco);
     font-family: var(--fontPrincipal);
     font-size: 1.2rem;
     text-align: center;
-}
-
-body.light-mode .principal__conteudo__paragrafo {
-    color: var(--corPreto);
 }
 
 .principal__conteudo__menu {
@@ -47,14 +31,6 @@ body.light-mode .principal__conteudo__paragrafo {
     margin-top: 15px;
 }
 
-body.light-mode .principal__conteudo__menu__link {
-    color: var(--corPreto);
-}
-
-body.dark-mode .principal__conteudo__menu__link {
-    color: var(--corBranco);
-}
-
 .principal__conteudo__menu__link_links {
     list-style: none;
 }
@@ -66,21 +42,9 @@ body.dark-mode .principal__conteudo__menu__link {
     font-family: var(--fontPrincipal);
 }
 
-body.light-mode .principal__conteudo__menu__link_links a {
-    color: var(--corPreto);
-}
-
-body.dark-mode .principal__conteudo__menu__link_links a {
-    color: var(--corBranco);
-}
-
 .principal__conteudo__menu__search-bar-label {
     color: var(--corBranco);
     padding-left: 15px;
-}
-
-body.light-mode .principal__conteudo__menu__search-bar-label {
-    color: var(--corPreto);
 }
 
 .principal__conteudo__menu__search-bar {
@@ -93,18 +57,10 @@ body.light-mode .principal__conteudo__menu__search-bar-label {
     padding-left: 5px;
 }
 
-body.light-mode .principal__conteudo__menu__search-bar {
-    color: var(--corPreto);
-}
-
 .principal__conteudo__menu__search-bar::placeholder {
     color: var(--corBranco);
     font-family: var(--fontPrincipal);
     font-size: 0.9rem;
-}
-
-body.light-mode .principal__conteudo__menu__search-bar::placeholder {
-    color: var(--corPreto);
 }
 
 .faixa {
@@ -116,12 +72,4 @@ body.light-mode .principal__conteudo__menu__search-bar::placeholder {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .faixa {
-    background-color: #e0e0e0;
-}
-
-body.dark-mode .faixa {
-    background-color: #2e2e2e;
 }
